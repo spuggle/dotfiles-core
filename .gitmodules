@@ -4,3 +4,6 @@
 [submodule ".config/heroic/themes/catppuccin"]
 	path = .config/heroic/themes/catppuccin
 	url = https://github.com/catppuccin/heroic.git
+[submodule ".local/share/backgrounds/walls-catppuccin-mocha"]
+	path = .local/share/backgrounds/walls-catppuccin-mocha
+	url = https://github.com/orangci/walls-catppuccin-mocha.git
