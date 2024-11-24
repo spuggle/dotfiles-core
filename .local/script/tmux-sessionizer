@@ -1,0 +1,39 @@
+#!/usr/bin/env bash
+
+if [[ $# -ne 1 ]]; then
+	directory=$(printf 'dev\nusr' | fzf)
+
+	if [[ -z "$directory" ]]; then
+		exit 1
+	fi
+else
+	directory=$1
+fi
+
+selected_dir=$(basename "$directory" | tr . _)
+
+if [[ "$selected_dir" == "dev" ]]; then
+	folders=$(echo ~/dev/personal ~/dev/work)
+elif [[ "$selected_dir" = "usr" ]]; then
+	folders=$(echo ~/usr)
+fi
+
+selected=$(fdfind . --exact-depth 1 --type d $folders | fzf)
+selected_name=$(basename "$selected" | tr . _)
+
+if [[ -z "$selected_name" ]]; then
+	exit 1
+fi
+
+tmux_running=$(pgrep tmux)
+
+if [[ -z $TMUX ]] && [[ -z $tmux_running ]]; then
+	tmux new-session -s $selected_name -c $selected
+	exit 0
+fi
+
+if ! tmux has-session -t=$selected_name 2>/dev/null; then
+	tmux new-session -ds $selected_name -c $selected
+fi
+
+tmux switch-client -t $selected_name

@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+rclone bisync GDrive_Work: ~/usr/documents/university/ --resync --drive-skip-dangling-shortcuts --drive-skip-shortcuts --filters-file ~/.config/rclone/gdrive_work_filters --verbose
