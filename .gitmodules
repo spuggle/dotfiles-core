@@ -7,3 +7,6 @@
 [submodule ".local/share/backgrounds/walls-catppuccin-mocha"]
 	path = .local/share/backgrounds/walls-catppuccin-mocha
 	url = https://github.com/orangci/walls-catppuccin-mocha.git
+[submodule ".local/sources/rivalcfg"]
+	path = .local/sources/rivalcfg
+	url = https://github.com/flozz/rivalcfg.git
