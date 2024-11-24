@@ -1,0 +1,18 @@
+[battery]
+disabled = true
+
+[git_status]
+deleted = "🗙"
+
+[nodejs]
+symbol = "⬢ "
+detect_extensions = []
+detect_files = [ "package.json" ]
+detect_folders = [ "node_modules" ]
+
+[python]
+detect_extensions = []
+
+[rust]
+detect_extensions = []
+
