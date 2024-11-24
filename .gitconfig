@@ -1,0 +1,49 @@
+[core]
+  editor = nvim
+  pager = delta
+
+[user]
+  name = spuggle
+  email = spuggle@protonmail.com
+
+[init]
+  defaultBranch = main
+
+[include]
+  path = ~/.gitconfig-desktop
+
+[include]
+  path = ~/.gitconfig-termux
+
+[includeIf "gitdir:~/dev/personal/"]
+  path = ~/dev/personal/.gitconfig
+
+[includeIf "gitdir:~/dev/work/"]
+  path = ~/dev/work/.gitconfig
+
+[commit]
+  gpgsign = true
+
+[credential]
+  helper = store
+
+[diff]
+  colorMoved = default
+
+[interactive]
+  diffFilter = delta --color-only --features=interactive
+
+[delta]
+  features = dracula decorations
+
+[delta "interactive"]
+  keep-plus-minus-markers = false
+
+[delta "decorations"]
+  dark = true
+  commit-style = raw
+  hyperlinks = true
+  line-numbers = true
+  max-line-length = 0
+  syntax-theme = Dracula
+
