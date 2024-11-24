@@ -1,0 +1,18 @@
+
+[window]
+decorations = "None"
+startup_mode = "Maximized"
+
+[window.dimensions]
+columns = 120
+lines = 40
+
+[window.padding]
+x = 10
+y = 10
+
+[font]
+size = 13
+
+[general]
+import = ["~/.config/alacritty/catppuccin-mocha.toml"]
