@@ -10,3 +10,6 @@
 [submodule ".local/sources/rivalcfg"]
 	path = .local/sources/rivalcfg
 	url = https://github.com/flozz/rivalcfg.git
+[submodule ".local/sources/btnx"]
+	path = .local/sources/btnx
+	url = https://github.com/cdobrich/btnx.git
