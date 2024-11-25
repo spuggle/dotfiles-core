@@ -14,3 +14,6 @@
 [submodule ".local/sources/btnx"]
 	path = .local/sources/btnx
 	url = https://github.com/cdobrich/btnx.git
+[submodule ".config/tmux/plugins/catppuccin/tmux"]
+	path = .config/tmux/plugins/catppuccin/tmux
+	url = https://github.com/catppuccin/tmux.git
