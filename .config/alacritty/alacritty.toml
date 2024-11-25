@@ -14,5 +14,8 @@ y = 10
 [font]
 size = 13
 
+[font.normal]
+family = "NotoMonoNerdFont"
+
 [general]
 import = ["~/.config/alacritty/catppuccin-mocha.toml"]
